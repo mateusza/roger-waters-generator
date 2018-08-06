@@ -1,0 +1,108 @@
+<!doctype html>
+
+<html>
+<head>
+<style>
+	@font-face {
+		font-family: "USAAF";
+		src: url(USAAF_Stencil.ttf);
+	}
+	
+	@font-face {
+		font-family: "RHCAS";
+		src: url(RHCAS.ttf);
+	}
+	
+	#message {
+		font-family: "RHCAS";
+		color: rgba( 0,0,0,0);
+		text-align: center;
+		width: 100vh;
+		height: 50vh;
+		border: none;
+		xoutline: 1px solid pink;
+		font-size: 9.4vh;
+		line-height: 1.05em;
+		padding: 1vh;
+		text-shadow:
+			rgba( 254, 221, 103, 0.99) 0px 0px 0.2px,
+			rgba( 224, 38, 18, 0.99) 0px 0px 5px,
+			rgba( 224, 38, 18, 0.99) 0px 0px 3px,
+			rgba( 254, 0, 0, 0.69) 0px 0px 10px,
+			rgba( 254, 0, 0, 0.69) 0px 0px 10px,
+			rgba( 254, 0, 0, 0.69) 0px 0px 90px,
+			rgba( 254, 0, 0, 0.69) 0px 0px 90px,
+			rgba( 254, 0, 0, 0.69) 0px 0px 90px;
+	
+		background-color: rgba(0,0,0,0);
+		text-transform: uppercase;
+		xtransition-duration: 1000ms;
+		letter-spacing: 0.1vh;
+		transform: perspective(120vh) rotateX(13deg) rotateY(35deg) translate( 10vh, 32vh );
+		overflow: hidden;
+		resize:none;
+		xoutline: 5px dotted red;
+	}
+	
+	#message::selection {
+		color: #fd9;
+	}
+	
+	@keyframes blink {
+		from {
+		}
+		to {
+			color: rgba( 255,30,30,0.3);
+		}
+	}
+	
+	#message:focus {
+		border:none;
+		outline: none;
+		animation-name: blink;
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
+		animation-duration: 300ms;
+		xbackground-color: rgba( 255,255,255,0.3);
+		
+	}
+	
+	body {
+		background-image: url(roger-waters-bg03.jpg);
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-color: black;
+		background-position: center;
+		xoutline: 1px solid green;
+		height: 100%;
+		margin: 0 auto;
+		padding: 0;
+		width: 120vh;
+		border: 0;
+	}
+	
+	html {
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		border: 0;
+	}
+	
+	#t { }
+	
+	div, p, textarea { margin: 0; }
+	
+</style>
+</head>
+<body>
+<div id="t">
+<textarea id="message" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+SET THE MEDIA FREE
+SET THE COURTS FREE
+KONSTYTUCJA!
+KONSTYTUCJA!
+KONSTYTUCJA!
+</textarea>
+</div>
+</body>
+</html>

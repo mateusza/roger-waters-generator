@@ -1,0 +1,85 @@
+	@font-face {
+		font-family: "USAAF";
+		src: url(fonts/USAAF.ttf);
+	}
+	
+	@font-face {
+		font-family: "RHCAS";
+		src: url(fonts/RHCAS.ttf);
+	}
+	
+	#message {
+		font-family: "RHCAS";
+		color: rgba( 0,0,0,0);
+		text-align: center;
+		width: 100vh;
+		height: 50vh;
+		border: none;
+		xoutline: 1px solid pink;
+		font-size: 8.2vh;
+		line-height: 1.1em;
+		padding: 1vh;
+		text-shadow:
+			rgba( 255, 192, 193, 0.15) 0px 0px 1px,
+			rgba( 255, 142, 133, 0.35) 0px 0px 3px,
+			rgba( 250, 10, 10, 0.45) 0px 0px 0px,
+			rgba( 232, 66, 54, 0.95) 0px 0px 3px,
+			rgba( 164, 38, 28, 0.99) 0px 0px 0.3px,
+			rgba( 164, 38, 28, 0.99) 0px 0px 13px;
+	
+		background-color: rgba(0,0,0,0);
+		text-transform: uppercase;
+		xtransition-duration: 1000ms;
+		letter-spacing: 0.1vh;
+		transform: perspective(80vh) rotateX(3deg) rotateY(-5deg);
+		overflow: hidden;
+		resize:none;
+		xoutline: 5px dotted red;
+	}
+	
+	#message::selection {
+		color: #fd9;
+	}
+	
+	@keyframes blink {
+		from {
+		}
+		to {
+			color: rgba( 255,30,30,0.3);
+		}
+	}
+	
+	#message:focus {
+		border:none;
+		outline: none;
+		animation-name: blink;
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
+		animation-duration: 300ms;
+		xbackground-color: rgba( 255,255,255,0.3);
+		
+	}
+	
+	body {
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-color: black;
+		background-position: center;
+		xoutline: 1px solid green;
+		height: 100%;
+		margin: 0 auto;
+		padding: 0;
+		width: 120vh;
+		border: 0;
+	}
+	
+	html {
+		height: 100%;
+		margin: 0;
+		padding: 0;
+		border: 0;
+	}
+	
+	#t { padding-top: 34vh; height: 53vh; }
+	
+	div, p, textarea { margin: 0; }
